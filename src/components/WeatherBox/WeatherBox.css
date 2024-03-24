@@ -1,0 +1,18 @@
+
+.innerbox{
+    padding: 20px 15px;
+      background-color: var(--secondry-color);
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
+  .w-1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .boxicon{
+    font-size: 50px;
+  }
+  .w-2 {
+    padding-top: 15px;
+  }

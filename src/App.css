@@ -1,0 +1,163 @@
+@import url('global.css');
+
+.baseColor{
+  color:var(--default-color);
+}
+.lightColor{
+  color: var(--light-color);
+}
+.App {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#8faca9, #7ead97);
+  height: 100vh;
+}
+.rowbox{
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.error {
+  color: var(--danger-color);
+}
+
+.searchbox{
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 20px 100px;
+  height: 96vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: scroll;
+}
+.cardbox{
+  background: var(--secondry-color);
+  color: var(--white-color);
+  padding: 20px 100px;
+  height: 96vh;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: scroll;
+}
+.header {
+  color: var(--white-color);
+  padding: 30px 0;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.searchbox::-webkit-scrollbar {
+	width: 0px;
+}
+.cardbox::-webkit-scrollbar {
+	width: 0px;
+}
+@media screen and (max-width:1199px) and (min-width: 992px) {
+  .searchbox, .cardbox{
+    padding: 20px 20px;
+  }
+  .header {
+    padding: 10px 0px 20px;
+  }
+  
+}
+@media screen and (max-width:991px) and (min-width: 768px) {
+  .searchbox, .cardbox{
+    padding: 20px 20px;
+  }
+  .header {
+    padding: 10px 0px 20px;
+  }
+
+  .boxicon {
+    font-size: 30px;
+  }
+  .boxtext h4 {
+    font-size: 20px;
+  }
+  .boxtext h6 {
+    font-size: 16px;
+  }
+  .weather-card .paraText {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 22px;
+  }
+  .textbox h4{
+    font-size: 16px;
+  }
+  .weather-card .iconSize {
+    font-size: 20px;
+  }
+  .weather-card .subbox{
+    padding: 20px 10px;
+  }
+  .topCard h4{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:767px) and (min-width: 320px) {
+  .App{
+    height: auto;
+  }
+  .searchbox{
+    height: auto;
+    padding: 20px 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .cardbox {
+    height: auto;
+    padding: 20px 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+  .searchbox .multibox{
+   display: none;
+  }
+  .search-form {
+    margin-bottom: 10px;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .topCard h4{
+    font-size: 20px;
+  }
+}
+@media (max-width : 576px){
+  .rowbox{
+    padding: 0;
+  }
+  .searchbox, .cardbox{
+    border-radius: 0px;
+  }
+}
+@media (max-width : 475px){
+  .searchbox, .cardbox{
+    padding: 20px 20px 0px;
+  }
+  .weather-card .paraText {
+    font-size: 14px;
+  }
+  .weather-card .subbox{
+    padding: 20px 5px;
+  }
+  .textbox h4{
+    font-size: 16px;
+  }
+  .weather-card .iconSize {
+    font-size: 20px;
+  }
+  .weather-card .boxicon {
+    font-size: 50px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+}
