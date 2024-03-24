@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudSun, faLocationDot,faWind } from '@fortawesome/free-solid-svg-icons';
+import { faCloudSun, faLocationDot,faWind ,faTemperatureHigh,faSun,faWater} from '@fortawesome/free-solid-svg-icons';
 
 const WeatherCard = ({ weather }) => {
     return (
@@ -38,7 +38,7 @@ const WeatherCard = ({ weather }) => {
                     </div>
                     <div className='col-6'>
                         <div className='subbox'>
-                            <div className='baseColor iconSize'><FontAwesomeIcon icon={faWind} /></div>
+                            <div className='baseColor iconSize'><FontAwesomeIcon icon={faWater} /></div>
                             <div className='textbox'>
                                 <p className='lightColor paraText'>Pressure</p>
                                 <h4>{weather.current.wind_mph ? weather.current.pressure_mb : 1011}/mb</h4>
@@ -47,7 +47,7 @@ const WeatherCard = ({ weather }) => {
                     </div>
                     <div className='col-6'>
                         <div className='subbox'>
-                            <div className='baseColor iconSize'><FontAwesomeIcon icon={faWind} /></div>
+                            <div className='baseColor iconSize'><FontAwesomeIcon icon={faTemperatureHigh} /></div>
                             <div className='textbox'>
                                 <p className='lightColor paraText'>Humidity</p>
                                 <h4>{weather.current.humidity ? weather.current.humidity : 37}</h4>
@@ -56,7 +56,7 @@ const WeatherCard = ({ weather }) => {
                     </div>
                     <div className='col-6'>
                         <div className='subbox'>
-                            <div className='baseColor iconSize'><FontAwesomeIcon icon={faWind} /></div>
+                            <div className='baseColor iconSize'><FontAwesomeIcon icon={faSun} /></div>
                             <div className='textbox'>
                                 <p className='lightColor paraText'>UV Index</p>
                                 <h4>{weather.current.uv ? weather.current.uv : 9.1}</h4>
